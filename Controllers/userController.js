@@ -21,7 +21,7 @@ module.exports.signUp = async(req,res)=>{
         }
 
          let hashPassword =  await bcrypt.hash(password,10);
-         
+          
         
          let newUser = new User({
                 name:name,
